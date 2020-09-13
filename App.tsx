@@ -13,7 +13,7 @@ export default function App() {
 
   const moveBall = () => {
     Animated.timing(value, {
-      toValue: { x: 100, y: 100 },
+      toValue: { x: 100, y: 800 },
       duration: 1000,
       useNativeDriver: false,
     }).start();
@@ -32,7 +32,7 @@ export default function App() {
         />
       </Animated.View>
       <TouchableOpacity onPress={moveBall}>
-        <Text>Click me</Text>
+        <Text>Click see</Text>
       </TouchableOpacity>
       <StatusBar style="auto" />
     </View>
